@@ -1,0 +1,9 @@
+.idea
+/build
+/target
+/project/target
+/project/project/target
+/common/target
+/strings/target
+*.iml
+
