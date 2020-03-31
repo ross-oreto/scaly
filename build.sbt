@@ -37,7 +37,8 @@ lazy val global = project
   .disablePlugins(AssemblyPlugin)
   .aggregate(
     common,
-    strings
+    strings,
+    numbers
   )
 
 lazy val common = project
@@ -51,6 +52,18 @@ lazy val common = project
 lazy val strings = project
   .settings(
     name := "strings",
+    settings,
+    libraryDependencies ++= commonDependencies ++ Seq(
+    )
+  )
+  .dependsOn(
+    common,
+    numbers
+  )
+
+lazy val numbers = project
+  .settings(
+    name := "numbers",
     settings,
     libraryDependencies ++= commonDependencies ++ Seq(
     )
