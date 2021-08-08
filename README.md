@@ -2,8 +2,8 @@
 ##### Add some useful functions to Scala. Just another utility class :)
 
 ```bash
-git clone https://github.com/ross-oreto/scala-use.git
-cd scala-use
+git clone https://github.com/ross-oreto/scaly.git
+cd scaly
 ```
 
 - run tests
